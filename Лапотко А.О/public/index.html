@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Интернет-магазин</title>
+</head>
+<body>
+    <header>
+        <h1>Интернет-магазин</h1>
+    
+        <nav>
+            <a href="#" id="all-products">Все товары</a>
+            <a href="#" id="category-electro">Электротехника</a>
+            <a href="#" id="category-electronic">Электроника</a>
+            <a href="/cart" id="cart">Корзина</a>
+            <a href="/profile" id="profile">Профиль</a>
+        </nav>
+    </header>
+
+<nav>
+    <label for="filter-color">Цвет:</label>
+    <input type="text" id="filter-color" placeholder="Введите цвет">
+
+    <label for="filter-year">Год выпуска:</label>
+    <input type="text" id="filter-year" placeholder="Введите год">
+    
+    <button id="apply-filter">Применить фильтр</button>
+</nav>
+
+<script src="script.js"></script>
+
+    <main id="products-container">
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

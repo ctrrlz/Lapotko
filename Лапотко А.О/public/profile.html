@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Профиль</title>
+</head>
+<body>
+    <header>
+        <h1>Профиль</h1>
+        <nav id="user-nav">
+            <a href="/" id="home-link">Вернуться в магазин</a>
+            <span id="user-info" style="display: none;"></span>
+            <button id="logout-btn" style="display: none;">Выход</button>
+        </nav>
+    </header>
+    
+    <main id="profile-container">
+        <h2>Профиль пользователя</h2>
+        <div id="login-form" style="display: none;">
+            <label for="username">Логин:</label>
+            <input type="text" id="username" name="username">
+            <button id="login-btn">Вход</button>
+        </div>
+        <div id="register-form" style="display: none;">
+            <label for="firstName">Имя:</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">Фамилия:</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="age">Возраст:</label>
+            <input type="text" id="age" name="age">
+            <label for="email">Почта:</label>
+            <input type="text" id="email" name="email">
+            <label for="newUsername">Логин:</label>
+            <input type="text" id="newUsername" name="newUsername">
+            <button id="register-btn">Регистрация</button>
+        </div>
+    </main>
+    
+    <script src="profile-script.js"></script>
+</body>
+</html>

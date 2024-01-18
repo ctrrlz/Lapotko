@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#product-details-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#product-details-container h2,
+#product-details-container p {
+    margin: 10px 0;
+}
+
+#product-name {
+    font-family: 'Times New Roman', serif;
+    font-size: 24px; 
+    margin-bottom: 15px; 
+}
+
+#product-price {
+    color: #4CAF50; 
+    font-size: 18px;
+}
+
+#product-description {
+    line-height: 1.6; 
+    margin-bottom: 20px;
+}
+
+#product-year,
+#product-color {
+    font-style: italic; 
+}
+
+#add-to-cart-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add-to-cart-button:hover {
+    background-color: #45a049;
+}

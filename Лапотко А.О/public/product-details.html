@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-details-style.css">
+    
+    <title>Подробная информация о товаре</title>
+</head>
+<body>
+    <header>
+        <h1>Подробная информация о товаре</h1>
+        <nav>
+            <a href="/">Вернуться в магазин</a>
+        </nav>
+    </header>
+    
+    <main id="product-details-container">
+        <h2 id="product-name"></h2>
+        <p id="product-price"></p>
+        <p id="product-description"></p>
+        <p id="product-year"></p>
+        <p id="product-color"></p>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            const productName = urlParams.get('name');
+            const productPrice = urlParams.get('price');
+            const productDescription = urlParams.get('description');
+            const productYear = urlParams.get('year');
+            const productColor = urlParams.get('color');
+
+            document.getElementById('product-name').textContent = productName;
+            document.getElementById('product-price').textContent = `Цена: $${productPrice}`;
+            document.getElementById('product-description').textContent = productDescription;
+            document.getElementById('product-year').textContent = `Год выпуска: ${productYear}`;
+            document.getElementById('product-color').textContent = `Цвет: ${productColor}`;
+      
+        });
+    </script>
+</body>
+</html>

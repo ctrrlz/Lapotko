@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart-style.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <header>
+        <h1>Корзина</h1>
+        <nav>
+            <a href="/">Вернуться в магазин</a>
+        </nav>
+    </header>
+    
+    <main id="cart-container">
+    </main>
+
+    <div id="order-summary">
+        <p>Общая сумма: <span id="total-amount">$0</span></p>
+        <button id="checkout-btn">Оформить заказ</button>
+    </div>
+
+    <div id="order-form" style="display: none;">
+        <h2>Оформление заказа</h2>
+        <form id="checkout-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Адрес:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Подтвердить заказ</button>
+        </form>
+    </div>
+
+    <script src="cart-script.js"></script>
+</body>
+</html>
